@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>SVG Path Animation</title>
+    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+    <script src="js/jq.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!--<script src="js/index.js"></script>-->
+    
+    <script>
+      $(function() {
+        $( ".datepicker" ).datepicker();
+      });
+    </script>
+    {{!-- <link rel="stylesheet" href="css/normalize.css"> --}}
+    <link rel="stylesheet" href="build/baseCss.css">    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+  </head>
+
+  <body>
+    <div id='title'>DAX Graph</div>
+  	<div id="container">
+      <div class="axis-selection acd">
+        <label for="start-date" class="start-date">Start Date:</label>
+        <input type="text" id="datepicker-start" class="datepicker" value="">
+        <label for="end-date" class="end-date">End Date:</label>
+        <input type="text" id="datepicker-end" class="datepicker" value="">
+        <div class="y-list" id="yaxis">
+          <label for="y-option">Y Axis:&nbsp;</label>
+          <div class="wrap">
+            <input type="text" id="y-option" value="">
+            <ul class="slctn">
+              <input class="chk" type="checkbox" name="" id="Recent Orders"><li class="opt">Recent Orders</li>
+              <input class="chk" type="checkbox" name="" id="Sales List"><li class="opt">Sales List</li>
+              <input class="chk" type="checkbox" name="" id="Canceled Orders"><li class="opt">Canceled Orders</li>
+            </ul>
+          </div>
+        </div>
+        <button class="submit" value="Submit">Submit</button>
+      </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
+    <script src="build/baseJs.js"></script>
+  </body>
+</html>

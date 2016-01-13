@@ -1,0 +1,254 @@
+#title {
+  margin: 20px auto 0;
+  color: #555;
+}
+#container {
+  float: right;
+  margin-right: 100px;
+  width: 60%;
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);*/
+}
+
+.xaxis path,
+.xaxis line,
+.yaxis path,
+.yaxis line {
+    stroke: #aaa;
+    fill: none;
+    shape-rendering: crispEdges;
+}
+
+.xaxis text,
+.yaxis text {
+    font-family: sans-serif;
+    font-size: 11px;
+    fill: #aaa;
+}
+
+.datapoint {
+    cursor: pointer;
+    stroke: #fff;
+    fill: rgba(255, 0, 50, .5);
+    stroke-width: 7;
+}
+
+.lineChart {
+    fill: none;
+    stroke-width: 3px;
+    stroke: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  /*background-color: #000;*/
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+div {
+  margin: 20px auto 0;
+  color: #aaa;
+  font-weight: 100;
+}
+
+svg {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.xaxis path,
+.xaxis line,
+.yaxis path,
+.yaxis line {
+  stroke: #aaa;
+  fill: none;
+  shape-rendering: crispEdges;
+}
+
+.xaxis text,
+.yaxis text {
+  font-family: sans-serif;
+  font-size: 11px;
+  fill: #aaa;
+}
+
+.datapoint {
+  cursor: pointer;
+  stroke: #111;
+  fill: rgba(0, 150, 255, 0.75);
+  stroke-width: 7;
+}
+
+/*.lineChart {
+  fill: none;
+  stroke-width: 3;
+  stroke: rgba(100, 100, 100, 0.4);
+}*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+ 
+/*path {
+    fill: none;
+    stroke: black;
+}
+*/
+svg {
+    display: block;
+    /*width: 100%;
+    height: 100%;
+    margin-top: 100px;*/
+}
+
+svg .data-point {
+    stroke: blue;
+    stroke-width: 1.5px;
+    fill: blue;        
+}
+
+svg .data-point-text {
+    font-family: sans-serif;
+    font-size: 11px;
+    fill: red;
+}
+
+svg .axis path, 
+svg .axis line {
+    fill: none;
+    stroke: black;
+}
+
+svg .axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+.line {
+  stroke-width: 1;
+  fill: none;
+  clip-path: url(#clip);
+}
+
+.area {
+  clip-path: url(#clip);
+  stroke-width: 0;
+  opacity: 0.7;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+/* Statistic lines */
+
+.meanline {
+  stroke: blue;
+  fill: none;
+  stroke-width: 2;
+  clip-path: url(#clip);
+}
+
+.meanline-label {
+  fill: blue;
+  stroke-width: 1;
+  font-size: 14px;
+}
+
+.sdline {
+  /*stroke: red;*/
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 10,10;
+  clip-path: url(#clip);
+}
+
+.sdline-label {
+  fill: red;
+  stroke-width: 1;
+  font-size: 14px;
+}
+
+.label {
+  fill: black;
+  stroke-width: 1;
+  font-size: 14px;
+}
+
+.hide { 
+  display: none;
+}
+
+
+.x {
+  float: left;
+  width: 50%;
+}
+
+.slctn {
+  list-style-type: none;
+  display: none;
+}
+
+#y-option { 
+  pointer-events : none;
+}
+
+.y-list {
+  width: 45%;
+  margin-left: 18px;
+  float: left;
+}
+
+.y-list label {
+  float: left;
+}
+
+.y-list + button {
+  margin: 20px 20px;
+  float: left;
+}
+
+.wrap {
+  display: inline-block;
+  margin: 0;
+}
+
+.acd {
+  display: block;
+}
+
+.chk {
+  float: left;
+}
